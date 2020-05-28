@@ -308,4 +308,32 @@ span-ref {
          margin-left: 10px;
          display: inline-block;
     }
+	/* w:691 */
+@media only screen and (max-width: 691px) and (orientation: portrait) {
+  .container {
+         display: grid;
+         grid-template: auto auto auto auto auto auto / auto auto;
+         grid-gap: 5px;
+    }
+  .grid-title {
+         grid-column: 1/4;
+    }
+     .grid-nav {
+         grid-column: 1/4;
+         grid-row: 2/3;
+    }
+     .grid-education {
+         grid-column: 1/3;
+    }
+     .grid-experience {
+         grid-column: 1/3;
+    }
+     .grid-hobbies {
+         grid-column: 1/4;
+    }
+     .grid-references {
+         grid-column: 1/4;
+    }
+  
+}
 
