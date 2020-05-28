@@ -4,23 +4,39 @@ body {
     }
 .container {
          display: grid;
-         grid-template: auto auto auto auto auto/ 250px auto auto;
+         grid-template: auto auto auto auto auto auto/ 250px auto auto;
          grid-gap: 10px;
          margin: 10px;
     }
 .grid-nav {
          grid-column: 1/2;
-         grid-row: 1/6;
+         grid-row: 1/7;
     }
 .grid-title {
          grid-column: 2/4;
+  grid-row: 1;
     }
  .grid-education {
          grid-column: 2/3;
     }
+.grid-education-content {
+        grid-column: 3/4;
+}
 .grid-experience {
          grid-column: 2/3;
     }
+.grid-experience-2nd-li {
+         grid-column: 2/3;
+  grid-row: 4;
+}
+.grid-experience-content {
+        grid-column: 3/4;
+  grid-row: 3;
+}
+.grid-experience-content-2nd-li {
+  grid column: 3/4;
+  grid-row: 4;
+}
 .grid-hobbies {
          grid-column: 2/4;
     }
@@ -160,13 +176,14 @@ h3 {
 .h3border {
          color: grey;
     }
+li {
+  color: lightslategrey;
+}
 .education-date {
          color: lightslategrey;
          font-size: 15px;
          line-height: 60px;
          display: block;
-         margin-left: auto;
-         margin-top: auto;
          text-decoration: underline orange;
     }
 .education-college {
@@ -180,7 +197,7 @@ h3 {
 .education-content {
          color: lightslategrey;
          font-size: 15px;
-         padding: 5px;
+         padding-top: 1px;
          letter-spacing: 1px;
          display: block;
          line-height: 20px;
@@ -227,16 +244,10 @@ h3 {
 .dropdown:hover .drop-button {
          color: springgreen;
     }
-.row-3-col-2 {
-         margin-top: 40px;
-    }
-/* Space between 1st and 2nd (li) under Experience */
-     .experience-college [id] {
-         margin-bottom: 90px;
-    }
 .experience-date {
          color: lightslategrey;
          font-size: 15px;
+         padding: auto;
          line-height: 20px;
          padding-bottom: 20px;
          display: block;
@@ -250,13 +261,22 @@ h3 {
          font-size: 15px;
          line-height: 20px;
          display: block;
-         padding-bottom: 2px;
          text-decoration: underline orange;
     }
 .experience-content {
          color: lightslategrey;
          font-size: 15px;
-         padding: 5px;
+         margin: auto;
+         padding: auto;
+         letter-spacing: 1px;
+         display: block;
+         line-height: 20px;
+         border-left: 2px solid orange;
+    }
+.experience-content-2nd-li {
+         color: lightslategrey;
+         font-size: 15px;
+         padding: auto;
          letter-spacing: 1px;
          display: block;
          line-height: 20px;
@@ -308,31 +328,52 @@ span-ref {
          margin-left: 10px;
          display: inline-block;
     }
-	/* w:691 */
+/* w:691 */
 @media only screen and (max-width: 691px) and (orientation: portrait) {
   .container {
          display: grid;
-         grid-template: auto auto auto auto auto auto / auto auto;
+         grid-template: auto auto auto auto auto auto auto/ auto auto;
          grid-gap: 5px;
     }
   .grid-title {
          grid-column: 1/4;
+    grid-row: 1/2;
     }
      .grid-nav {
          grid-column: 1/4;
          grid-row: 2/3;
     }
      .grid-education {
-         grid-column: 1/3;
+         grid-column: 1/2;
+       grid-row: 3/4;
     }
+  .grid-education-content {
+        grid-column: 2/4;
+    grid-row: 3/4;
+}
      .grid-experience {
-         grid-column: 1/3;
+         grid-column: 1/2;
+       grid-row: 4/5;
     }
+  .grid-experience-2nd-li {
+         grid-column: 1/2;
+  grid-row: 5/6;
+}
+  .grid-experience-content {
+        grid-column: 2/4;
+  grid-row: 4/5;
+}
+  .grid-experience-content-2nd-li {
+  grid-column: 2/4;
+  grid-row: 5/6;
+}
      .grid-hobbies {
          grid-column: 1/4;
+       grid-row: 6/7;
     }
      .grid-references {
          grid-column: 1/4;
+       grid-row: 7/8;
     }
   
 }
