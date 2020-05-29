@@ -328,8 +328,8 @@ span-ref {
          margin-left: 10px;
          display: inline-block;
     }
-/* w:691 */
-@media only screen and (max-width: 691px) and (orientation: portrait) {
+/*  w<691px */
+@media screen and (max-width: 691px) and (orientation: portrait) {
   .container {
          display: grid;
          grid-template: auto auto auto auto auto auto auto/ auto auto;
@@ -377,4 +377,9 @@ span-ref {
     }
   
 }
-
+/* w<448px */
+@media screen and (max-width: 448px) and (orientation: portrait) {
+    .subtitle {
+         text-align: center;
+    }
+  
