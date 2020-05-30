@@ -278,6 +278,7 @@ li {
   background: none;
   border-radius: 10px;
   cursor: pointer;
+  color: springgreen;
 }
 
 ul.drop-menu {
