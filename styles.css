@@ -34,7 +34,7 @@ body {
   grid-row: 3;
 }
 .grid-experience-content-2nd-li {
-  grid column: 3/4;
+  grid-column: 3/4;
   grid-row: 4;
 }
 .grid-hobbies {
@@ -121,7 +121,7 @@ h4 {
          font-size: 18px;
     }
 p {
-         color: #c5ccd3;
+         color: #d3d9de;
     }
 a {
          color: white;
@@ -165,6 +165,19 @@ a:visited {
     padding: 10px;
     border-radius: 10px;
     }
+.btn-1 {
+    background: #4881ea;
+    color: #c5ccd3;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 18px 30px;
+    border-radius: 100px;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+.btn-1:hover {
+        transform: scale(1.15)
+  }
 h3 {
          background-color: grey;
          color: lightskyblue;
@@ -306,7 +319,7 @@ h5 {
          margin-left: 10px;
          display: block;
     }
-span-ref {
+.span-ref {
          display: block;
          color: lightslategrey;
          font-size: 15px;
@@ -324,7 +337,7 @@ span-ref {
 .ref-email {
          color: lightslategrey;
          font-size: 15px;
-         letter-spacing: 2px
+         letter-spacing: 2px;
          margin-left: 10px;
          display: inline-block;
     }
@@ -382,4 +395,5 @@ span-ref {
     .subtitle {
          text-align: center;
     }
+}
   
