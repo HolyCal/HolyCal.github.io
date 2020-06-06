@@ -1,6 +1,7 @@
 body {
   background-color: white;
   font-family: "Josefin Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
