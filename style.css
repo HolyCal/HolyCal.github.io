@@ -90,11 +90,11 @@ img {
   }
   75% {
     opacity: 0.5;
-    transform: rotateY(270deg) translateX(22.5px);
+    transform: rotateY(270deg) translateX(7.5px);
   }
   100% {
     opacity: 1;
-    transform: rotateX(360deg) translateX(30px);
+    transform: rotateX(360deg) translateX(0px);
   }
   opacity: 1;
 }
@@ -508,7 +508,7 @@ h5 {
 }
 
 /*  w<691px */
-@media screen and (max-device-width: 691px) and (orientation: portrait) {
+@media screen and (max-width: 691px) and (orientation: portrait) {
   .container {
     display: grid;
     grid-template: auto auto auto auto auto auto auto/auto auto;
@@ -576,13 +576,13 @@ h5 {
 }
 
 /* w<448px */
-@media screen and (max-device-width: 448px) and (orientation: portrait) {
+@media screen and (max-width: 448px) and (orientation: portrait) {
   .subtitle {
     text-align: center;
   }
 }
 /* iPad portrait */
-@media screen and (max-device-width: 768px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   .container {
     display: grid;
     grid-template: auto auto auto auto auto auto auto/auto auto;
