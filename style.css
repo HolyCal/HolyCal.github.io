@@ -1,7 +1,6 @@
 body {
   background-color: white;
   font-family: "Josefin Sans", sans-serif;
-  overflow-x: hidden;
 }
 
 .container {
@@ -65,8 +64,40 @@ img {
   grid-column: 1/2;
   max-width: 100%;
   height: auto;
+  animation-name: res-photo;
+  animation-duration: 5000ms;
+  animation-delay: 500ms;
+  animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
 }
-
+@keyframes res-photo {
+  0% {
+    opacity: 0;
+    transform: rotateY(0deg) translateX(0px);
+  }
+  10% {
+    opacity: 0.1;
+    transform: rotateY(36deg) translateX(3px);
+  }
+  25% {
+    opacity: 0.5;
+    transform: rotateY(90deg) translateX(7.5px);
+  }
+  50%{
+    opacity: 1;
+    transform: rotateY(180deg) translateX(15px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: rotateY(270deg) translateX(22.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(360deg) translateX(30px);
+  }
+  opacity: 1;
+}
 .wrapper {
   height: auto;
   width: auto;
@@ -148,12 +179,14 @@ p {
 a {
   color: white;
   text-decoration: none;
+  
 }
 a:visited {
   color: red;
 }
 a:hover {
   font-size: 20px;
+  
 }
 a:active {
   color: orange;
@@ -259,11 +292,16 @@ li {
   border-radius: 10px;
   letter-spacing: 6px;
   width: 160px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+.certificate:hover {
+  transform: scale(1.15);
 }
 .certificate > ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   margin-bottom: 18px;
   display: inline-block;
   background-color: none;
@@ -271,17 +309,14 @@ li {
 }
 .certificate > ul > li {
   position: absolute;
-  background-color: none;
   width: 355px;
   z-index: 1;
 }
 .certificate > ul > li:hover {
-  background: none;
   border-radius: 10px;
   cursor: pointer;
   color: springgreen;
 }
-
 ul.drop-menu {
   margin-left: -50px;
   position: absolute;
@@ -536,7 +571,10 @@ h5 {
     max-width: 250px;
     z-index: 1;
   }
+  ul.drop-menu {
+  margin-left: -32.5px;
 }
+
 /* w<448px */
 @media screen and (max-device-width: 448px) and (orientation: portrait) {
   .subtitle {
