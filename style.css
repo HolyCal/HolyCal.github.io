@@ -67,7 +67,7 @@ img {
   animation-name: res-photo;
   animation-duration: 5000ms;
   animation-delay: 500ms;
-  animation-iteration-count: 2;
+  animation-iteration-count: 3;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
@@ -78,19 +78,19 @@ img {
   }
   10% {
     opacity: 0.1;
-    transform: rotateY(36deg) translateX(3px);
+    transform: rotateY(36deg) translateX(-12px);
   }
   25% {
     opacity: 0.5;
-    transform: rotateY(90deg) translateX(7.5px);
+    transform: rotateY(90deg) translateX(-30px);
   }
   50%{
     opacity: 1;
-    transform: rotateY(180deg) translateX(15px);
+    transform: rotateY(180deg) translateX(-60px);
   }
   75% {
     opacity: 0.5;
-    transform: rotateY(270deg) translateX(7.5px);
+    transform: rotateY(270deg) translateX(30px);
   }
   100% {
     opacity: 1;
