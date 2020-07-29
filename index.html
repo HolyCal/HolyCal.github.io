@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,8 +20,8 @@
         <div class="grid-nav">
             <div class="nav">
                 <picture>
-                    <source srcset="images/resume-photo.png ">
-                    <source srcset="images/resume-photo-mobile-portrait.png" media="(max-device-width:375px) and (orientation:portrait)">
+                  <source media="(min-width:769px)" srcset="images/resume-photo.png">
+                  <source media="(max-device-width:375px)" srcset="images/resume-photo-mobile-portrait.png">
                     <img id="resume-photo" src="images/resume-photo.png" alt="Profile picture of Calum Thake-Edwards." title="Calum Thake - Edwards">
                 </picture>
                 <h2>Contact</h2>
@@ -46,17 +47,15 @@
                     <h4>Website</h4>
                 </div>
                 <div>
-                    <p><a class="website" href="https://codepen.io/HolyCal/full/LYEWoPw" target="_blank">Calum's Favourites</a></p>
+                    <p><a class="email" href="https://codepen.io/HolyCal/full/LYEWoPw" target="_blank">Calum's Favourites</a></p>
                 </div>
                 <div>
                     <h4 id="about-me">About Me</h4>
                     <p class="hand" title="About Me">"I enjoy working with technology and learning about different things technology can do. I would like to study software development as well as web development and make my way to becoming a game developer."</p> 
-                  
-                    <h6> <a class="btn-get-in-touch" href="https://codepen.io/HolyCal/full/jObgrvz" target="_blank">Get in touch</h6></a>
+                  <h4 class="btn-get-in-touch">Get in touch</h4>                
     </div>
                 </div>
             </div>
-        </div>
         <div class="grid-education">
             <h3>Education</h3>
 
@@ -65,10 +64,10 @@
                     <div class="education-date">2019 - Present</div>
                     <div class="education-college">
                       <span>Open Classrooms: Junior Web Developer</span>
+                  </div>
                 </li>
             </ul>
                      </div>
-        </div>
         <div class="grid-education-content">
             <h3 class="h3border">border</h3>
        <div class="education-content">
@@ -76,15 +75,14 @@
                     <li>
                       <span>I have an understanding of HTML, CSS and Terminal and have learnt how to use Github and Git Bash to create and work on repositories.
                       </span>
-                      <span id="education-content-second-p">I am currently studying web development at Open Classroom where I have acheived three certificates. 
+                      <span id="education-content-second-p">I am currently studying web development at Open Classroom where I have acheived three certificates.
+                      </span>
+                      </li>
                  </ul>
-                     </li>
-                     </span>
                         <div class="certificate">
   <ul>
     <li>Certificates
       <ul class="drop-menu menu-1">
-        <ul>
     <li>
       <ul class="drop-menu menu-1">
         <li><a href="https://openclassrooms.com/en/course-certificates/2856248854" target="_blank">Certificate for "Build Your First Web Pages With HTML and CSS"</a></li>
@@ -94,6 +92,7 @@
       </ul>
     </li>
   </ul>
+</ul>
 </div>
   </div>
 
@@ -107,25 +106,19 @@
                       <div class="experience-date"> 2019 - Present</div>
                         <div class="experience-college"><span id="first">Open Classrooms: Junior Web Developer</span>
                       </div>
-              </ul>
-                    </li>
+                      </li>
+              </ul> 
                   </div>
           </div>
                   <div class="grid-experience-2nd-li">
                     <ul>
                     <li>
                       <div class="experience-date">2019 - Present
-                        <span>
                           </div>
-                       
                        <div class="experience-college">Open Classrooms: Junior Web Developer
-                        </span>
+                         </div>
                     </li>
                 </ul>
-                   </div>    
-          </div>
-              
-            </div>
           </div>
         <div class="grid-experience-content">
             <h3 class="h3border">border</h3>
@@ -133,9 +126,9 @@
                 <ul>
                     <li>
                       <span id="first-p">I have experience using HTML and CSS. I can use HTML to generate information into a webpage and then use CSS to customize the layout and appearnace of that information. I can use Terminal to navigate through a system, create files, folders and documents and then save them to the system.
+                     </span>
                      </li>
               </ul>
-                  </span>
           </div>
 </div>
 <div class="grid-experience-content-2nd-li">
@@ -144,10 +137,10 @@
                         <li>
                           <span>I have experience using Github to create and work on repositories. I can then use Git Bash to work on remote repositories; clone, create new branches, add files and then push and pull commits.
                           </span>
+      </li>
+      </ul>
             </div>
           </div>
-                </ul>
-                </div>
         <div class="grid-hobbies">
             <h3>Hobbies</h3>
             <div class="wrapper">
@@ -156,19 +149,19 @@
                 <picture>
                     <source srcset="images/gym-icon.png" media="(max-width:1920px)">
                     <source srcset="images/gym-icon-h100.png" media="(max-device-width:375px) and (orientation:portrait)">
-                    <img id="hobbies-icon" src="images/gym-icon.png" alt="icon for gym" title="Gym">
+                    <img class="hobbies-icon" src="images/gym-icon.png" alt="icon for gym" title="Gym">
                 </picture>
                 <h5>Gaming</h5>
                 <picture>
                     <source srcset="images/gaming-icon.png" media="(max-width:1920px)">
                     <source srcset="images/gaming-icon-h100.png" media="(max-device-width:375px) and (orientation:portrait)">
-                    <img id="hobbies-icon" src="images/gaming-icon.png" alt="icon for gaming" title="Gaming">
+                    <img class="hobbies-icon" src="images/gaming-icon.png" alt="icon for gaming" title="Gaming">
                 </picture>
                 <h5>Anime</h5>
                 <picture>
                     <source srcset="images/anime-icon.png" media="(max-width:1920px)">
                     <source srcset="images/anime-icon-h100.png" media="(max-device-width:375px) and (orientation:portrait)">
-                    <img id="hobbies-icon" src="images/anime-icon.png" alt="icon for anime" title="Anime">
+                    <img class="hobbies-icon" src="images/anime-icon.png" alt="icon for anime" title="Anime">
                 </picture>
             </div>
             <hr>
