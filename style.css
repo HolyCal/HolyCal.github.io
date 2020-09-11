@@ -10,7 +10,7 @@ body {
 }
  .grid-nav {
      grid-column: 1/2;
-     grid-row: 1/7;
+     grid-row: 1/8; 
 }
  .grid-title {
      grid-column: 2/4;
@@ -39,6 +39,12 @@ body {
 }
  .grid-hobbies, .grid-references {
      grid-column: 2/4;
+}
+.box-c {
+    max-height: 93px;
+}
+.box-d {
+    max-height: 280px;
 }
  img {
      max-width: 100%;
@@ -116,7 +122,7 @@ body {
      display: block;
 }
  h2 {
-     animation: falling 1.5s linear 1;
+     animation: falling 2.5s linear 1;
      color: #c5ccd3;
      background-color: #4881ea;
      margin: 5%;
@@ -125,7 +131,7 @@ body {
      font-size: 20px;
 }
  h4 {
-     animation: falling 1.5s linear 1;
+     animation: falling 2.5s linear 1;
      color: #c5ccd3;
      text-align: center;
      text-decoration: solid orange underline;
@@ -133,27 +139,28 @@ body {
 }
  p {
      color: #d3d9de;
-     animation: falling 1.5s linear 1;
+     animation: falling 2.5s linear 1;
 }
  .websites {
      transform: scale(1);
      color: white;
      text-decoration: none;
-     animation: falling 1.5s linear 1;
-     font-size: 30px
+     animation: falling 2.5s linear 1;
+     font-size: 30px;
+     transition: 200ms;
 }
  .websites:visited {
      color: red;
 }
  .websites:hover {
      transform: scale(1.2);
-     font-szie: 35px;
+     font-size: 40px;
 }
  .websites:active {
      color: orange;
 }
  #about-me {
-     animation: falling 1.5s linear 1;
+     animation: falling 2.5s linear 1;
      color: #c5ccd3;
      background-color: #4881ea;
      margin: 5%;
@@ -184,8 +191,6 @@ body {
  .hand[title]:hover:before {
      content: attr(title);
      display: block;
-     position: float;
-     float: top;
      font-family: "Josefin Sans", sans-serif;
      color: #c5ccd3;
      background-color: #4881ea;
@@ -197,14 +202,7 @@ body {
      padding-bottom: auto;
      text-decoration: none;
 }
- .btn {
-     font-size: 20px;
-     cursor: pointer;
-     padding: 10px;
-     border-radius: 10px;
-}
  h6 {
-     margin-top: 150px;
      transform: scale(1);
      transition: transform 400ms;
 }
@@ -223,12 +221,12 @@ body {
      border-radius: 10px;
 }
  h6 {
-     color: white;
      text-decoration: none;
      animation: falling 1.5s linear 1;
 }
  .get-in-touch{
      text-decoration: none;
+     color: #f0f2f4;
 }
  h6:hover {
      transform: scale(1.2);
@@ -589,6 +587,33 @@ body {
          grid-column: 1/3;
          grid-row: 7/8;
     }
+     .websites {
+     transform: scale(1);
+     color: white;
+     text-decoration: none;
+     animation: falling 2.5s linear 1;
+     font-size: 30px;
+     transition: 200ms;
+}
+ .websites:visited {
+     color: red;
+}
+ .websites:hover {
+     transform: scale(1.2);
+     font-size: 40px;
+}
+ .websites:active {
+     color: orange;
+}
+     .hand {
+     transform: none;
+}
+ .hand:hover {
+     transform: none;
+}
+ .hand[title]:hover:before {
+     content: none;
+}
      .btn {
          font-size: 20px;
          cursor: pointer;
